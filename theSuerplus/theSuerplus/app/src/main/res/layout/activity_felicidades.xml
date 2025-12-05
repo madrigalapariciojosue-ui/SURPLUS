@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".felicidades">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/confeti"
+                android:layout_marginEnd="8dp" />
+
+
+            <TextView
+                android:id="@+id/congratsText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Felicidades, ya te registraste en Surplus"
+                android:textColor="#0C345F"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="2" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/confeti"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahora termina de configurar tu perfil poniendo la ubicación para mostrarte los restaurantes mas cercanos a tu zona, y verificando el correo electrónico así como el numero de teléfono"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/corazon"
+            android:contentDescription="Registro exitoso"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Felicidades ya puedes empezar a usar Surplus"
+            android:textColor="#0C345F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+
+        <TextView
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#0C345F"
+            android:text="Comenzar a usar Surplus"
+            android:textColor="#F6F084"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</ScrollView>

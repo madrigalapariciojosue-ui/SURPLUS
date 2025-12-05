@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="48dp"
+    android:background="@drawable/category_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginEnd="8dp">
+
+    <TextView
+        android:id="@+id/categoryEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#0C345F"
+        android:textStyle="bold" />
+
+</LinearLayout>

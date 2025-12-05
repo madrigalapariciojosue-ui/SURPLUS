@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".telefono">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/flecha"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduzca su teléfono"
+            android:textColor="#0C345F"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/warningText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduzca un número de teléfono para poder verificarlo después"
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:textColor="#020d18"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:id="@+id/countryCodeLayout"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/flagText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🇲🇽"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/countryCodeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+52"
+                    android:textColor="#020d18"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@android:drawable/arrow_down_float" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="0.6"
+                android:layout_marginStart="8dp"
+                android:hint="Ingrese su número de teléfono"
+                android:textColorHint="#80000000"
+                android:background="@drawable/edittext_border"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="phone"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <!-- Sección de código de verificación (inicialmente oculta) -->
+        <LinearLayout
+            android:id="@+id/verificationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código de verificación"
+                android:textColor="#020d18"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/verificationCodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Ingrese el código de 6 dígitos"
+                android:textColorHint="#80000000"
+                android:background="@drawable/edittext_border"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/verifyButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#4CAF50"
+                android:text="Verificar código"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/timerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#757575"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/resendCodeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reenviar código"
+                    android:textColor="#03A9F4"
+                    android:textSize="12sp"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#0A2D52"
+            android:text="Enviar código"
+            android:textColor="#F6F084"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿ya tienes cuenta? Inicia sesión"
+            android:textColor="#03A9F4"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

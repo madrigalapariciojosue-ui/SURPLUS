@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/restaurant_item_background"
+    android:layout_marginBottom="16dp">
+
+    <!-- Imagen del pack -->
+    <ImageView
+        android:id="@+id/packImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pack_guisado" />
+
+    <!-- Contenido del pack -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Nombre del pack -->
+        <TextView
+            android:id="@+id/packName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pack Guisado Tradicional"
+            android:textColor="#0C345F"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/packDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guisado del día con acompañamientos"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Lista de contenido -->
+        <TextView
+            android:id="@+id/packContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contiene: Pipián de pollo, Arroz, Frijoles, Tortillas"
+            android:textColor="#666666"
+            android:textSize="11sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Precio y descuento -->
+        <TextView
+            android:id="@+id/packPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="~~$180~~ $65 (64% OFF)"
+            android:textColor="#FF6B3D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Disponibilidad y horario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/packAvailability"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🎁 5 disponibles"
+                android:textColor="#298042"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/packPickupTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏰ 8:00-8:30 PM"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- Selector de cantidad y botón agregar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Selector de cantidad -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad:"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="8dp" />
+
+                <!-- Botón disminuir -->
+                <TextView
+                    android:id="@+id/decreaseButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/quantity_button_background"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- Cantidad actual -->
+                <TextView
+                    android:id="@+id/quantityText"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#0C345F"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="8dp" />
+
+                <!-- Botón aumentar -->
+                <TextView
+                    android:id="@+id/increaseButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/quantity_button_background"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <!-- Botón agregar al carrito -->
+            <TextView
+                android:id="@+id/addToCartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="#298042"
+                android:text="AGREGAR"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

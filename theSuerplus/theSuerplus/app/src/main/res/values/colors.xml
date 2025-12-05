@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores existentes -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores para Surplus -->
+    <color name="primary_color">#0C345F</color>
+    <color name="secondary_color">#F6F084</color>
+    <color name="accent_color">#FF6B3D</color>
+    <color name="success_color">#298042</color>
+
+    <!-- Color para Bottom Navigation -->
+    <color name="bottom_nav_color_state">#0C345F</color>
+</resources>

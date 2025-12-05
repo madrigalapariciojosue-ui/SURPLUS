@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity_login">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/flecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+
+        android:text="Inicio de sesión"
+        android:textColor="#0A2D52"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailLoginButton"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="32dp"
+        android:background="#0A2D52"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Inicia sesión con tu correo"
+        android:textAlignment="center"
+        android:textColor="#F6F084"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginTitle" />
+
+    <TextView
+        android:id="@+id/phoneLoginButton"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="#CCCCCC"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Iniciar sesión con teléfono"
+        android:textAlignment="center"
+        android:textColor="#020d18"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLoginButton" />
+
+    <TextView
+        android:id="@+id/separatorText"
+        android:layout_width="167dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="O inicia sesión con"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLoginButton" />
+
+    <View
+        android:id="@+id/leftLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000000"
+        android:rotationX="305"
+        app:layout_constraintBottom_toBottomOf="@+id/separatorText"
+        app:layout_constraintEnd_toStartOf="@+id/separatorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/separatorText" />
+
+    <View
+        android:id="@+id/rightLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/separatorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/separatorText"
+        app:layout_constraintBottom_toBottomOf="@+id/separatorText"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/googleLoginButton"
+        android:layout_width="78dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="52dp"
+        android:clickable="true"
+        android:contentDescription="Iniciar sesión con Google"
+        android:focusable="true"
+        android:src="@drawable/google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separatorText" />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="¿No tienes una cuenta? regístrate aquí"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

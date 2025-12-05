@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "191540864040",
+    "project_id": "surplus-a2439",
+    "storage_bucket": "surplus-a2439.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191540864040:android:39de9f1018f318c32dc11d",
+        "android_client_info": {
+          "package_name": "com.example.thesuerplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191540864040-14rgjofjhcckkdt8t3man06k7jiptp7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWnnyVFoH3hCTBQmeKcqpnpdpDzZa1R7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191540864040-14rgjofjhcckkdt8t3man06k7jiptp7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
